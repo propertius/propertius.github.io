@@ -26,3 +26,6 @@ If the project uses different locales, it is possible that your production or te
 -Djava.locale.providers=COMPAT
 ```
 
+## Prefer records over classes for immutable objects
+
+One big advantage of records over regular classes is the out-of-the-box `equals` and `hashCode` implementations you get. When using records, the `equals` methods is used for references and primitives (through wrappers), applied to all components. Compare that to a regular class, which only compare references (`==`).
