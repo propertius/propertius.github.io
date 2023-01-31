@@ -25,3 +25,14 @@ Because waiting for Jenkins to notify you about a wrongly formed javadoc is not 
 ```shell
 mvn javadoc:javadoc | grep -i ": error:"
 ```
+
+## Filtering using resources
+
+Adding this to your `pom.xml` will replace all placeholders within files in the the `src/main/resources` folder with properties available while running the `process-resources` phase.
+
+```xml
+<resource>
+  <directory>src/main/resources</directory>
+  <filtering>true</filtering>
+</resource>
+```
