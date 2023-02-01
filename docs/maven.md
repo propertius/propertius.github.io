@@ -36,3 +36,19 @@ Adding this to your `pom.xml` will replace all placeholders within files in the 
   <filtering>true</filtering>
 </resource>
 ```
+
+## Display available plugin updates
+
+Show available plugin updates within your project by running:
+
+```shell
+mvn versions:display-plugin-updates
+```
+
+## Display available dependency updates
+
+Show available dependency updates within your project by running:
+
+```shell
+mvn versions:display-dependency-updates
+```
