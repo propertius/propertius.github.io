@@ -52,3 +52,11 @@ Show available dependency updates within your project by running:
 ```shell
 mvn versions:display-dependency-updates
 ```
+
+## Clean local copy of NVD CVE data
+
+Sometimes you need to force the dependency analyzer to clean the local copy hosting NVD data.
+
+```shell
+mvn org.owasp:dependency-check-maven:purge
+```
