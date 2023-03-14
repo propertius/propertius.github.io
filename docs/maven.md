@@ -60,3 +60,11 @@ Sometimes you need to force the dependency analyzer to clean the local copy host
 ```shell
 mvn org.owasp:dependency-check-maven:purge
 ```
+## Download sources for a specific JAR with Maven
+
+No need to wait for Maven to download all the sources for all dependencies within your project. With these command, only the sources of the specified artefact will be downloaded:
+
+```shell
+mvn dependency:sources -DincludeGroupIds=some-group -DincludeArtifactIds=some-artifact-id
+```
+
