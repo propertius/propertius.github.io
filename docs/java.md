@@ -44,3 +44,10 @@ import java.nio.charset.Charset;
 //...
 IOUtils.readLines(inputStream, Charset.forName("UTF-8"))...
 ```
+## System.lineSeparator()
+
+Whenever you need to add a new line, do it without worrying about what OS your JVM will be running in. This line 
+
+```java
+System.lineSeparator();
+```
